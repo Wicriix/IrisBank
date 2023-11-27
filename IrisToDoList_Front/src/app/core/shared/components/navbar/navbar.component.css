@@ -1,0 +1,15 @@
+.navbar{
+  min-height: 50px;
+  background: #19b2a3 !important;
+}
+
+.nav-link{
+  color: #FFF!important;
+}
+
+
+.logo{
+  height: 30px;
+  width: 70px;
+  margin-top: 2px;
+}

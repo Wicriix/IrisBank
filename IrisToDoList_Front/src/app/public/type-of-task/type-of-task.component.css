@@ -1,0 +1,14 @@
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.list-group-item {
+  position: relative;
+}
+
+
+.green-color{
+  color: #235923;
+  /* font-weight: 700; */
+}

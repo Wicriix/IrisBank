@@ -1,0 +1,23 @@
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through !important;
+}
+
+.green-color{
+  color: #235923;
+  /* font-weight: 700; */
+}
+
+.check{
+  width: 20px;
+  height: 20px;
+
+}

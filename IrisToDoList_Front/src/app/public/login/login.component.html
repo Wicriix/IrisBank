@@ -1,0 +1,23 @@
+<div class="main">
+  <div class="d-flex justify-content-center ">
+    <div class="content">
+      <form [formGroup]="loginForm" >
+        <div class="form-group ">
+          <label class="label"  for="username">Correo</label>
+          <input type="text" placeholder="Correo" class="form-control" [ngClass]="getClass('username') ? 'is-invalid' : ''" formControlName="username" >
+          <div class="invalid-feedback">
+            Ingrese un correo de usuario.
+          </div>
+          <label for="password">Contraseña</label>
+          <div class="pass">
+            <input [type]="hide ? 'password' : 'text'" placeholder="Contraseña" [ngClass]="getClass('password') ? 'is-invalid' : ''" class="form-control pass" formControlName="password">
+            <div class="invalid-feedback">
+              Ingrese la contraseña.
+            </div>
+          </div>
+        </div>
+        <button type="button" (click)="login()" class="w-100 mt-3 btn btn-primary">Iniciar sesión</button>
+      </form>
+    </div>
+  </div>
+</div>

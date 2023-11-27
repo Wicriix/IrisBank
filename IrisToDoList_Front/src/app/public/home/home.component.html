@@ -1,0 +1,84 @@
+<div class="container mt-5">
+  <h1>Bienvenido a la página de inicio del proyecto IRIS</h1>
+  <p>El proyecto IRIS Task List está diseñado para ayudar a los usuarios a gestionar sus tareas de manera eficiente. Los usuarios pueden añadir y eliminar tareas. La interfaz frontend está construida con Angular 16, ofreciendo una experiencia de usuario dinámica y responsive. El backend de este proyecto está construido con .NET 7.0. y desplegado en Azure en un app service con su base de datos </p>
+  <img src="../../../assets/Basededatos.png" alt="">
+
+  <section id="cloning">
+    <h2>Clonar el Repositorio</h2>
+    <p>To clone the repository, use the following git command:</p>
+    <code>git clone https://github.com/Wicriix/IrisBank.git</code>
+  </section>
+
+  <section id="running-back-end">
+    <h2>Running the Backend</h2>
+    <p>si quieres no ejecutas el backed ya que lo subi a la nube y esta bajoe sta url https://iristestback.azurewebsites.net (la cual esta ya conmfigurado en la coleccion de postman que esta en el proyecto), pero si aun asi quieres ejecutarlo debe tenjer sql instalado en tu maquina y te deje un archivo .bak para que restaures la DB y le agregues tu conexion al app settings.</p>
+    <ol>
+      <li>
+        Restaurar IrisDB.bak:
+        <a href="https://www.youtube.com/watch?v=5kcDdZS2hBE">
+          <code>video</code>
+        </a>
+      </li>
+      <li>
+        Cambiar la cadena de conexión por la tuya en el appsetting ejemplo:<br>
+        <pre><code>
+        {{conect}}
+        </code></pre>
+      </li>
+
+      <li>asegurarse que el proyecto IrisChallenge este como proyecto prinbcipal para correr <code>play</code></li>
+    </ol>
+    <img src="../../../assets/backed.png" alt="">
+  </section>
+
+  <section  id="running-front-end">
+    <h2>Run Frontend </h2>
+    <ol>
+        <li>
+            <strong>Instalar Node.js y npm</strong>:
+            <p>Visita <a href="https://nodejs.org/en">Node.js</a> y descarga la versión 16.17.0. Instálala y verifica la instalación en la terminal con <code>node -v</code> y <code>npm -v</code>.</p>
+        </li>
+        <li>
+            <strong>Instalar Angular CLI</strong>:
+            <p>En la terminal, ejecuta <code>npm install -g @angular/cli@16.2.10</code> y verifica con <code>ng version</code>.</p>
+        </li>
+        <img src="../../../assets/angularversion.png" alt="">
+    </ol>
+</section>
+
+<section>
+    <h2>Configuración del Proyecto Angular</h2>
+    <ol>
+        <li>
+            <strong>abrir la carpeta IrisToDoList_Front</strong>:
+            <p>en el codigo clonado en la carpeta IrisToDoList_Front se encuentra el front abrelo con vs code
+              o Navega con un cmd a esta ubicacion <br>
+        </li>
+        <li>
+            <strong>Instalar Dependencias</strong>:
+            <p>como ya te encuentras en la ubicacion del proyecto ejecuta <code>npm install</code>.</p>
+        </li>
+    </ol>
+</section>
+
+<section>
+    <h2>Ejecución de la Aplicación Angular</h2>
+    <ol>
+        <li>
+            <strong>Ejecutar el Servidor de Desarrollo</strong>:
+            <p>En la carpeta del proyecto, ejecuta <code>ng serve</code>.</p>
+        </li>
+        <li>
+            <strong>Acceder a la Aplicación</strong>:
+            <p>Abre un navegador y visita <a href="http://localhost:4200">http://localhost:4200</a>.</p>
+        </li>
+    </ol>
+</section>
+
+  <section id="tutorial-video">
+    <h2>Video Explicacion</h2>
+    <p>aca encuentars el video con la explicacion del proyecto</p>
+    <a href="https://youtu.be/yourvideo">Step-by-Step Video</a>
+  </section>
+
+</div>

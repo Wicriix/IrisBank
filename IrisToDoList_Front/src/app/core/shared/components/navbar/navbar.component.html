@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light py-0 ps-3">
+  <div class="container-fluid ">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a  href="home" class="align-self-start">
+      <img alt="logo iris footer v2.png" class="logo" src="https://cl00041-irissite-static-pdn-s3.s3.amazonaws.com/images/logo_iris_footer_v2.max-170x170.png?AWSAccessKeyId=ASIAYARUXWMGLT7EL24M&amp;Signature=cQYUK2LdXACIlR1iRKt9NgmDBkI%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEDcaCXVzLWVhc3QtMSJHMEUCIBJHOwFAgEGeQZ0H5yyxN7699tApOf6zKDN7jLSGE2jJAiEAxP2vfx6AO6jwK%2Fej1fUQkHbyGnQNlSgg9YMjmGpZGT0qrgMIkP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgw1NTA5NDAxNjA3ODAiDHTQx0%2F4qs5peGONWiqCA4X67ICt58vGZvPmqKbviKhdh3Sb669RbskMT2Cw7Xe9%2B7ymX%2B1hTo%2FcvD4xvRkZzZ3JCdwXLGQIsvKpm%2FGFx8CXCrXfTZA%2Bc4LU6pMO2lXlYlCg8wrr80esO7epqtrr%2FbdNlWUcLVEOvAs5X%2FXEPxWbG25pQPSeKSjHun5baI%2BXnByc9O%2BmjwdGJA%2FAIJMNIxL6NF1SZxd5jhoQFpEjwDorAPi3YDTAJ%2BOJCxCmfQkNzQEPvVH47Ri8p%2BUSO3Q%2B7vYjT4%2FSVi71OBHawBTZ8%2FCxx7AN6JFiuPxn9NUli6Z4NtkX9SxQ4I3GtGYRlautrt22YUPLOjSZj6E884gsF3AldZbRTbNnxtuYhQYC2vXvdTI7rsuni1A26BG5xnCH0tgwF%2BCofpT4nKqEfBBUY0%2BxXxN32hOv8q%2FtiDEW%2F%2BAJ7KrfKhKs0SbaI1Qo9JaLdggez2ZoyR%2BNulCxaNUgEbC9G6zcVwTtPhqahNBcFD%2Fe%2B8S0JftP3CmVfh6TguVwn1P6MN60jasGOp0B%2B%2B366aGEVyHrIeNJKPdxgJ%2BaQURTO7FSLgQ%2FKTTsqMB%2FiqVjjq05blHHaSMUYv7h911mizCIfSGNXXMOisXYJyRFpatZRYitsLq1sZ%2FyPr2OWT3q%2FbxjWEYSVGWs8Srex78WyU%2F3TGEOWEoLH2aVqnZ%2FuyUWfheIETKoFvTVqsz2IhtznQeGqzobz2cuWJ5KCLBxjA7IYvR%2FK28itw%3D%3D&amp;Expires=1701617184" >
+    </a>
+    
+    <div class="collapse navbar-collapse"  id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active " >
+          <a class="nav-link" href="home" >Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="TaskToDo">Lista de tareas </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="TypeOfTask">Tipos de tareas </a>
+        </li>
+        <li class="nav-item active d-block d-sm-none">
+          <a *ngIf="!isLogged" class="nav-link colorfont" routerLink="login">Ingresar</a>
+          <a *ngIf="isLogged" class="nav-link colorfont dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{userLogged.userName}}</a>
+          <div *ngIf="isLogged" class="dropdown-menu">
+            <a class="dropdown-item" >Mi cuenta</a>
+            <a class="dropdown-item" (click)="signOut()">Cerrar sesión</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <nav  class="navbar p-0">
+      <ul class="navbar-nav" >
+        <li class="nav-item dropdown">
+          <a *ngIf="!isLogged" class="nav-link d-none d-sm-block" routerLink="login">Ingresar</a>
+          <a *ngIf="isLogged" class="nav-link dropdown-toggle d-none d-sm-block"  data-bs-toggle="dropdown" aria-expanded="false">{{userLogged.userName}}</a>
+          <div *ngIf="isLogged" class="dropdown-menu  dropdown-menu-right">
+            <a class="dropdown-item fs-3" >Mi cuenta</a>
+            <a class="dropdown-item" (click)="signOut()">Cerrar sesión</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</nav>

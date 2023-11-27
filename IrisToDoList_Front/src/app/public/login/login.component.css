@@ -1,0 +1,23 @@
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.main{
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.content{
+  max-width: 300px;
+  position: relative;
+  margin: 50px auto;
+}
+.btn{
+  background-color: #19b2a3 !important;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1;
+  text-transform: uppercase;
+  border: 0px;
+}

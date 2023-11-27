@@ -1,0 +1,30 @@
+<div class="container">
+  <h2 class="my-4">To do List</h2>
+<div class="form-group mb-3 d-flex flex-column">   
+  <select class="form-control w-100 mb-2 green-color" [(ngModel)]="newTaskType">
+    <option *ngFor="let type of taskTypes" [value]="type.idTypeOfTask">{{ type.name }}</option>
+  </select>
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" [(ngModel)]="newTask" placeholder="Add new task" aria-label="Recipient's username" aria-describedby="button-add">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary " type="button" (click)="addTask()" id="button-add"><i class="bi bi-plus-lg green-color "></i></button>
+    </div>
+  </div> 
+  
+  <h3 class="green-color">ALL</h3>
+  <hr class="w-100">
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between " *ngFor="let task of tasks; let i = index">
+    <input  type="checkbox" class="check mt-auto mb-auto" [(ngModel)]="task.done" (change)="toggleTaskCompletion(task)">
+    <p class="green-color fs-3 mb-0 mx-2"  [class.text-muted]="task.done" [class.text-decoration-line-through]="task.done">
+      {{ task.description }}
+    </p>
+    <p class=" mb-0 green-color">-</p>
+    <p class="badge badge-secondary m-1">{{ task.type }}</p>
+    <button type="button" class="btn btn-sm text-danger ml-auto btn-close" (click)="removeTask(task.idTaskToDo)"><i class="bi bi-x-lg"></i></button>
+  </li>
+</ul>
+</div>
+
+

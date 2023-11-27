@@ -1,0 +1,29 @@
+<div class="container">
+  <h2 class="my-4">Types of task</h2>
+  <div class="input-group mb-3">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Add new task"
+      [(ngModel)]="newType"
+    />
+    <div class="input-group-append">
+      <button
+        class="btn btn-outline-secondary"
+        type="button"
+        (click)="addTask()"
+      >
+      <i class="bi bi-plus-lg green-color "></i>
+      </button>
+    </div>
+  </div>
+  <hr class="w-100">
+  <ul class="list-group">
+    <div *ngFor="let task of taskTypes; let i = index">
+      <li *ngIf="task.userId != null" class="list-group-item d-flex justify-content-between"  >
+          <p class="green-color fs-3 mb-0 mx-2">{{ task.name }}</p>
+          <button type="button" class="btn btn-sm text-danger ml-auto btn-close" (click)="removeTask(task.idTypeOfTask)"><i class="bi bi-x-lg"></i></button>
+      </li>
+    </div>
+  </ul>
+</div>
