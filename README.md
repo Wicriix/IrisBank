@@ -33,3 +33,5 @@ El backend está desplegado en la nube y es accesible en https://iristestback.az
 ### Ejecución de la Aplicación Angular
 - Ejecuta `ng serve` en la carpeta del proyecto.
 - Abre un navegador y visita `http://localhost:4200`.
+
+##video explicacion: https://youtu.be/UskcI6jMLYw
