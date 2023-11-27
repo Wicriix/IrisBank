@@ -5,7 +5,7 @@ El proyecto **IRIS Task List** está diseñado para ayudar a los usuarios a gest
 
 ## Clonar el Repositorio
 Para clonar el repositorio, utiliza el siguiente comando git:
-git clone https://github.com/yourusername/iris-project.git
+git clone https://github.com/Wicriix/IrisBank.git
 
 
 ## Ejecución del Backend
