@@ -34,4 +34,11 @@ El backend está desplegado en la nube y es accesible en https://iristestback.az
 - Ejecuta `ng serve` en la carpeta del proyecto.
 - Abre un navegador y visita `http://localhost:4200`.
 
-##video explicacion: https://youtu.be/UskcI6jMLYw
+## video explicacion: https://youtu.be/UskcI6jMLYw
+
+### usuario y clave
+```json
+{
+  "email": "williamx1962@gmail.com",
+  "password": "prueba"
+}
